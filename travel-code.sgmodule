@@ -1,0 +1,8 @@
+#!name=Travel Code Enhanced
+#!desc=Travel Code displays custom area
+
+[Script]
+travel-code.js = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/missuo/TravelCodeApp/main/travel-code.js,type=http-response,pattern=^https:\/\/xc\.caict\.ac\.cn:8088\/appLocation\/query_v2,script-update-interval=0
+
+[MITM]
+hostname = xc.caict.ac.cn:8088
